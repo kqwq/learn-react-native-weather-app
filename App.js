@@ -1,11 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+import WeatherWidget from "./component/WeatherWidget";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text style={styles.title}>Weather Around the World</Text>
       <StatusBar style="auto" />
+
+      <WeatherWidget city="Catharpin" lat={38.85} lon={-77.57} />
+      <WeatherWidget city="Catharpin" lat={38.85} lon={-77.57} />
+      <WeatherWidget city="Catharpin" lat={38.85} lon={-77.57} />
     </View>
   );
 }
@@ -13,8 +18,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "teal",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: "bold",
+    color: "white",
+    marginBottom: 20,
   },
 });

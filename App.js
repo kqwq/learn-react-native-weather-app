@@ -8,9 +8,9 @@ export default function App() {
       <Text style={styles.title}>Weather Around the World</Text>
       <StatusBar style="auto" />
 
-      <WeatherWidget city="Catharpin" lat={38.85} lon={-77.57} />
-      <WeatherWidget city="Catharpin" lat={38.85} lon={-77.57} />
-      <WeatherWidget city="Catharpin" lat={38.85} lon={-77.57} />
+      <WeatherWidget city="Miami" lat={25.76} lon={-80.19} />
+      <WeatherWidget city="Orlando" lat={28.54} lon={-81.38} />
+      <WeatherWidget city="Tampa" lat={27.95} lon={-82.46} />
     </View>
   );
 }
